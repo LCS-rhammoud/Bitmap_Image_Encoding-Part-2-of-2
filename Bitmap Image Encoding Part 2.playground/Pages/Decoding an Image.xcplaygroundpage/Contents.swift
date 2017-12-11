@@ -20,12 +20,26 @@ import PlaygroundSupport
 
 // Copy your encoded image string here...
 let encodedBitmap = """
-1,3,1
-4,1
-1,4
-0,1,3,1
-0,1,3,1
-1,4
+w6, b7, w7
+w7, b1, e3, b1, w8
+w7, b1, e3, b1, w8
+w7, b1, e3, b1, w8
+w7, b1, e2, b2, w8
+w7, b1, e3, b1, w8
+w7, b1, e3, b1, w8
+w7, b1, e2, b2, w8
+w6, b1, e5, b1, w7
+w6, b1, e3, b3, w7
+w5, b1, e7, b1, w6
+w5, b1, e7, b1, w6
+w4, b1, p9, b1, w5
+w4, b1, p6, b4, w5
+w3, b1, p3, b1, p4, p2, b1, p2, b1, w4
+w3, b1, p1, r1, b2, p3, b2, r1, p1, b1, w4
+w2, b1, p2, r2, p5, r2, b3, w3
+w2, b1, p5, b3, p5, b1, w3
+w2, b1, p13, b1, w3
+w3, b13, w4
 """
 
 // Make a canvas
@@ -86,7 +100,16 @@ for character in encodedBitmap {
         // Default colour after new line is white
         canvas.fillColor = Color.white
         currentColor = "white"
-        
+    } else if character == "b" {
+        canvas.fillColor = Color.black
+    } else if character == "e" {
+        canvas.fillColor = Color.blue
+    } else if character == "r" {
+        canvas.fillColor = Color.red
+    } else if character == "w" {
+        canvas.fillColor = Color.white
+    } else if character == "p" {
+        canvas.fillColor = Color.init(hue: 314, saturation: 55, brightness: 100, alpha: 100)
     } else {
         
         // Get the new number of pixels to draw
