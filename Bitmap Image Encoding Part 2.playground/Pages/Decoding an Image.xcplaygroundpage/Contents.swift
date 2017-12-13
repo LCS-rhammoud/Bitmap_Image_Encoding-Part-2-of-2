@@ -20,30 +20,30 @@ import PlaygroundSupport
 
 // Copy your encoded image string here...
 let encodedBitmap = """
-w6, b7, w7
-w7, b1, e3, b1, w8
-w7, b1, e3, b1, w8
-w7, b1, e3, b1, w8
-w7, b1, e2, b2, w8
-w7, b1, e3, b1, w8
-w7, b1, e3, b1, w8
-w7, b1, e2, b2, w8
-w6, b1, e5, b1, w7
-w6, b1, e3, b3, w7
-w5, b1, e7, b1, w6
-w5, b1, e7, b1, w6
-w4, b1, p9, b1, w5
-w4, b1, p6, b4, w5
-w3, b1, p3, b1, p4, p2, b1, p2, b1, w4
-w3, b1, p1, r1, b2, p3, b2, r1, p1, b1, w4
-w2, b1, p2, r2, p5, r2, b3, w3
-w2, b1, p5, b3, p5, b1, w3
-w2, b1, p13, b1, w3
-w3, b13, w4
+w6,b7,w7
+w7,b1,e3,b1,w8
+w7,b1,e3,b1,w8
+w7,b1,e3,b1,w8
+w7,b1,e2,b2,w8
+w7,b1,e3,b1,w8
+w7,b1,e3,b1,w8
+w7,b1,e2,b2,w8
+w6,b1,e5,b1,w7
+w6,b1,e3,b3,w7
+w5,b1,e7,b1,w6
+w5,b1,e7,b1,w6
+w4,b1,p9,b1,w5
+w4,b1,p6,b4,w5
+w3,b1,p3,b1,p4,b1,p2,b1,w4
+w3,b1,p1,r1,b2,p3,b2,r1,p1,b1,w4
+w2,b1,p2,r2,p5,r2,b3,w3
+w2,b1,p5,b3,p5,b1,w3
+w2,b1,p7,p6,b1,w3
+w3,b6,b7,w4
 """
 
 // Make a canvas
-let canvas = Canvas(width: 402, height: 402)
+let canvas = Canvas(width: 402, height: 402, quality: .Ultra)
 
 // Make a grid
 // NOTE: The code that builds the grid was tucked away in something called a *function* to keep things tidy. We'll learn about functions later.
@@ -112,6 +112,10 @@ for character in encodedBitmap {
         canvas.fillColor = Color.init(hue: 314, saturation: 55, brightness: 100, alpha: 100)
     } else {
         
+        // DEBUG:
+        print("current character is:")
+        print(character)
+        
         // Get the new number of pixels to draw
         drawThisManyPixels = Int(String(character))!
         
@@ -129,6 +133,8 @@ for character in encodedBitmap {
     }
     
 }
+
+canvas.copyToClipboard()
 
 /*:
  ### Check the results

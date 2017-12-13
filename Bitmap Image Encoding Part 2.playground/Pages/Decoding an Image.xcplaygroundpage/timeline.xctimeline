@@ -2,5 +2,15 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/rhammoud/Desktop/Computer%20Science/Bitmap_Image_Encoding-Part-2-of-2/Bitmap%20Image%20Encoding%20Part%202.playground/Pages/Decoding%20an%20Image.xcplaygroundpage#CharacterRangeLen=23&amp;CharacterRangeLoc=3288&amp;EndingColumnNumber=0&amp;EndingLineNumber=120&amp;StartingColumnNumber=30&amp;StartingLineNumber=119&amp;Timestamp=534875471.290186"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/rhammoud/Desktop/Computer%20Science/Bitmap_Image_Encoding-Part-2-of-2/Bitmap%20Image%20Encoding%20Part%202.playground/Pages/Decoding%20an%20Image.xcplaygroundpage#CharacterRangeLen=6&amp;CharacterRangeLoc=3444&amp;EndingColumnNumber=19&amp;EndingLineNumber=125&amp;StartingColumnNumber=13&amp;StartingLineNumber=125&amp;Timestamp=534875471.29048"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
